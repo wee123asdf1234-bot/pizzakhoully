@@ -1,0 +1,8 @@
+{
+  "name": "بيتزا الخولي",
+  "description": "الموقع الرسمي لمطعم بيتزا الخولي في كفر الشيخ - بيتزا وفطائر شرقية وإيطالية، وجبات وساندويتشات، مفتوح على مدار الساعة، أجواء عائلية وتوصيل لكافة الأنحاء.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

@@ -1,0 +1,41 @@
+@import "tailwindcss";
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    direction: rtl;
+    font-family: 'Cairo', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  }
+
+  body {
+    background-color: #141110;
+    color: #f7f4ef;
+    min-height: 100vh;
+  }
+
+  /* Custom scrollbar */
+  ::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+  }
+  ::-webkit-scrollbar-track {
+    background: #181514;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #39312d;
+    border-radius: 9999px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: #d97706;
+  }
+}
+
+/* Explicit LTR container for phone numbers to prevent Arabic RTL reversal */
+.phone-number {
+  direction: ltr !important;
+  unicode-bidi: isolate !important;
+  text-align: left !important;
+  white-space: nowrap !important;
+  display: inline-block !important;
+  font-variant-numeric: tabular-nums;
+}

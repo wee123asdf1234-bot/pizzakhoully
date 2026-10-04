@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <linearGradient id="bg-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1e1816" />
+      <stop offset="100%" stop-color="#0f0d0c" />
+    </linearGradient>
+    <linearGradient id="crust-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f59e0b" />
+      <stop offset="50%" stop-color="#d97706" />
+      <stop offset="100%" stop-color="#b45309" />
+    </linearGradient>
+    <linearGradient id="cheese-grad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#fef08a" />
+      <stop offset="50%" stop-color="#fde047" />
+      <stop offset="100%" stop-color="#eab308" />
+    </linearGradient>
+    <radialGradient id="glow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#ea580c" stop-opacity="0.25" />
+      <stop offset="100%" stop-color="#ea580c" stop-opacity="0" />
+    </radialGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#000000" flood-opacity="0.4" />
+    </filter>
+  </defs>
+
+  <!-- Background circle -->
+  <rect width="512" height="512" rx="128" fill="url(#bg-grad)" />
+  <circle cx="256" cy="256" r="220" fill="url(#glow)" />
+  <circle cx="256" cy="256" r="216" stroke="#d97706" stroke-width="4" stroke-opacity="0.4" stroke-dasharray="8 6" fill="none" />
+
+  <!-- Pizza Slice Group -->
+  <g filter="url(#shadow)" transform="translate(0, -10)">
+    <!-- Crust Arc -->
+    <path d="M 140 160 Q 256 115 372 160 Q 380 175 365 185 Q 256 142 147 185 Q 132 175 140 160 Z" fill="url(#crust-grad)" />
+    
+    <!-- Cheese Body -->
+    <path d="M 152 182 Q 256 145 360 182 L 268 375 Q 256 395 244 375 Z" fill="url(#cheese-grad)" />
+
+    <!-- Sauce & Cheese Melts Drips -->
+    <path d="M 230 350 Q 240 375 250 370 Q 260 365 270 345 Z" fill="#fef08a" opacity="0.9" />
+
+    <!-- Pepperoni Toppings -->
+    <circle cx="220" cy="225" r="22" fill="#b91c1c" />
+    <circle cx="220" cy="225" r="18" fill="#dc2626" />
+    <circle cx="295" cy="235" r="24" fill="#b91c1c" />
+    <circle cx="295" cy="235" r="20" fill="#dc2626" />
+    <circle cx="256" cy="305" r="20" fill="#b91c1c" />
+    <circle cx="256" cy="305" r="16" fill="#dc2626" />
+
+    <!-- Green Peppers & Olives -->
+    <path d="M 245 200 Q 265 195 270 210" stroke="#16a34a" stroke-width="7" stroke-linecap="round" fill="none" />
+    <path d="M 185 270 Q 200 290 215 275" stroke="#16a34a" stroke-width="6" stroke-linecap="round" fill="none" />
+    <circle cx="310" cy="285" r="9" fill="#18181b" />
+    <circle cx="310" cy="285" r="4" fill="#fef08a" />
+    <circle cx="180" cy="220" r="8" fill="#18181b" />
+    <circle cx="180" cy="220" r="3.5" fill="#fef08a" />
+
+    <!-- Steam Waves -->
+    <path d="M 220 130 Q 210 105 225 85" stroke="#f59e0b" stroke-width="4" stroke-linecap="round" fill="none" opacity="0.75" />
+    <path d="M 256 120 Q 270 95 256 75" stroke="#f59e0b" stroke-width="5" stroke-linecap="round" fill="none" opacity="0.85" />
+    <path d="M 292 130 Q 305 105 290 85" stroke="#f59e0b" stroke-width="4" stroke-linecap="round" fill="none" opacity="0.75" />
+  </g>
+
+  <!-- Typography: بيتزا الخولي -->
+  <text x="256" y="445" font-family="'Cairo', 'Segoe UI', Tahoma, sans-serif" font-size="44" font-weight="900" text-anchor="middle" fill="#fef3c7" letter-spacing="1">بيتزا الخولي</text>
+  <text x="256" y="475" font-family="'Cairo', 'Segoe UI', Tahoma, sans-serif" font-size="16" font-weight="700" text-anchor="middle" fill="#d97706" letter-spacing="3">كفر الشيخ • مفتوح 24 ساعة</text>
+</svg>
